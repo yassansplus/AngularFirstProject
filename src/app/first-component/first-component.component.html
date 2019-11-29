@@ -1,0 +1,5 @@
+<li class="list-group-item">
+    <div style="width: 20px; height: 20px; background-color:red;" *ngIf="appareilStatus === 'eteins'"></div>
+    Appareil : {{appareilName}} - {{getStatus()}}
+    <input type="text" class="form-control" [(ngModel)]="appareilName">
+</li>

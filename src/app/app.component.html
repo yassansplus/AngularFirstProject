@@ -1,0 +1,7 @@
+<div class="container">
+    <h1 class="text-center">Ma super liste</h1>
+    <ul class="list-group">
+        <app-first-component *ngFor="let appareil of appareils" [appareilName] = "appareil.name" [appareilStatus]="appareil.status"></app-first-component>
+    </ul>
+    <button class="btn btn-success" [disabled]="!isAuth" (click)="onAllumer()">Tout allumer</button>
+</div>
